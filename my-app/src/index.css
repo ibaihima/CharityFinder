@@ -38,20 +38,25 @@ html, body, #root {
   transition: box-shadow 0.5s, transform 0.5s;
 }
 .wrapper .container .bottom .left {
-  height: 100%;
   width: 50%;
   background: #f4f4f4;
   position: relative;
   float: left;
 }
- 
+
+.left {
+  height: 600px
+}
+
+.right {
+  height: 600px
+}
  
 .wrapper .container .bottom .right {
   width: 50%;
   background: #A6CDDE;
   color: white;
   float: right;
-  height: 300%;
   overflow: hidden;
 }
  
@@ -88,7 +93,7 @@ align-items:center;
 }
 
 .header_img{
-  padding-left: 200px;
+  padding-left: 250px;
 }
 
 h1{

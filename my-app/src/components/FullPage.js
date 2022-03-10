@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import StarterList from './StarterList';
 import Filter from './Filter';
 import NavBar from './NavBar';
+import LikedList from './LikedList';
 
 
 function FullPage() {
@@ -10,7 +11,8 @@ function FullPage() {
     const [page, setPage] = useState("/")
     const [filterCategory, setFilterCategory] = useState("")
     const [savedInventory, setSavedInventory] = useState([])
-
+    const [likedList, setLikedList] = useState([])
+    let list;
 
     useEffect(() => {
         fetch('https://api.data.charitynavigator.org/v2/Organizations?app_id=46d68c21&app_key=b6a0d59f06011cc01deec1812f392ebd&rated=true')
@@ -31,6 +33,14 @@ function FullPage() {
     },[filterCategory])
 
 
+    useEffect(() => {
+        fetch('http://localhost:3000/likedList')
+        .then(res => res.json())
+        .then(data => {
+            list = data
+        })
+    },[])
+
 
 
     function handleSearchChange(e) {
@@ -48,7 +58,9 @@ function FullPage() {
             })
             .then(response => response.json())
             .catch(error => console.error("Error:", error))
-            .then(response => console.log("Success:", JSON.stringify(response)));
+            .then(response => {
+                setLikedList(response)
+            } );
         return(
             console.log("clicked")
         )
@@ -66,7 +78,7 @@ function FullPage() {
                     <StarterList charity={savedInventory} onCharityClicked={onCharityClicked} />
                 </Route>
                 <Route path="/liked">
-                    <Filter />
+                    <LikedList charity = {list}/>
                 </Route>
                 <Route path="*">
                     <h1>404 not found</h1>
