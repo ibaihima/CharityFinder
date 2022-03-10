@@ -12,7 +12,6 @@ function FullPage() {
     const [filterCategory, setFilterCategory] = useState("")
     const [savedInventory, setSavedInventory] = useState([])
     const [likedList, setLikedList] = useState([])
-    let list;
 
     useEffect(() => {
         fetch('https://api.data.charitynavigator.org/v2/Organizations?app_id=46d68c21&app_key=b6a0d59f06011cc01deec1812f392ebd&rated=true')
@@ -37,7 +36,7 @@ function FullPage() {
         fetch('http://localhost:3000/likedList')
         .then(res => res.json())
         .then(data => {
-            list = data
+            setLikedList(data)
         })
     },[])
 
@@ -58,9 +57,6 @@ function FullPage() {
             })
             .then(response => response.json())
             .catch(error => console.error("Error:", error))
-            .then(response => {
-                setLikedList(response)
-            } );
         return(
             console.log("clicked")
         )
@@ -78,7 +74,7 @@ function FullPage() {
                     <StarterList charity={savedInventory} onCharityClicked={onCharityClicked} />
                 </Route>
                 <Route path="/liked">
-                    <LikedList charity = {list}/>
+                    <LikedList charity = {likedList}/>
                 </Route>
                 <Route path="*">
                     <h1>404 not found</h1>

@@ -207,6 +207,302 @@
         }
       },
       "id": 2
+    },
+    {
+      "charityNavigatorURL": "https://www.charitynavigator.org/?bay=search.summary&orgid=12517&utm_source=DataAPI&utm_content=9af5afa3",
+      "mission": "Working with the communities we serve, the United Way of Eastern Maine is a trusted catalyst for meaningful and lasting change that improves the lives of people in our region. We improve lives by mobilizing the caring power of people and communities. We aim to achieve measurable results in three areas:\r\n\r\nEducation: Children are Ready to Learn and Safe After School\r\nIncome: Families Safe and Secure\r\nHealth: Seniors are Independent and Active",
+      "websiteURL": "https://www.unitedwayem.org/",
+      "tagLine": "Live united",
+      "charityName": "United Way of Eastern Maine",
+      "ein": "010211478",
+      "orgID": 12517,
+      "currentRating": {
+        "score": 91.51,
+        "ratingID": 165424,
+        "publicationDate": "2021-12-23T05:00:00.000Z",
+        "ratingImage": {
+          "small": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/stars/4starsb.png",
+          "large": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/stars/4stars.png"
+        },
+        "rating": 4,
+        "_rapid_links": {
+          "related": {
+            "href": "https://api.data.charitynavigator.org/v2/Organizations/010211478/Ratings/165424"
+          }
+        },
+        "financialRating": {
+          "score": 88.68,
+          "rating": 3
+        },
+        "accountabilityRating": {
+          "score": 96,
+          "rating": 4
+        }
+      },
+      "category": {
+        "categoryName": "Community Development",
+        "categoryID": 10,
+        "charityNavigatorURL": "https://www.charitynavigator.org/index.cfm?bay=search.categories&categoryid=10&utm_source=DataAPI&utm_content=9af5afa3",
+        "image": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/categories/religion.png?utm_source=DataAPI&utm_content=9af5afa3"
+      },
+      "cause": {
+        "causeID": 42,
+        "causeName": "United Ways",
+        "charityNavigatorURL": "https://www.charitynavigator.org/index.cfm?bay=search.results&cgid=10&cuid=42&utm_source=DataAPI&utm_content=9af5afa3",
+        "image": "https://d20umu42aunjpx.cloudfront.net/_gfx_/causes/small/United_Way.gif?utm_source=DataAPI&utm_content=9af5afa3"
+      },
+      "irsClassification": {
+        "deductibility": "Contributions are deductible",
+        "subsection": "501(c)(3)",
+        "assetAmount": 5286737,
+        "nteeType": "Philanthropy, Voluntarism and Grantmaking Foundations",
+        "incomeAmount": 2754184,
+        "nteeSuffix": "0",
+        "filingRequirement": "990 (all other) or 990EZ return",
+        "classification": "Charitable Organization",
+        "latest990": "June, 2020",
+        "rulingDate": "September, 1959",
+        "nteeCode": "T70",
+        "groupName": null,
+        "deductibilityCode": "1",
+        "affiliation": "Central - the organization is a central type organization (no group exemption) of a National, Regional or Geographic grouping of organizations.",
+        "foundationStatus": "Organization which receives a substantial part of its support from a governmental unit or the general public   170(b)(1)(A)(vi)",
+        "nteeClassification": "Fund Raising Organizations That Cross Categories",
+        "accountingPeriod": "June",
+        "deductibilityDetail": null,
+        "exemptOrgStatus": "Unconditional Exemption",
+        "exemptOrgStatusCode": "01",
+        "nteeLetter": "T"
+      },
+      "mailingAddress": {
+        "country": null,
+        "stateOrProvince": "ME",
+        "city": "Bangor",
+        "postalCode": "04401",
+        "streetAddress1": "700 Main Street",
+        "streetAddress2": "Suite 1"
+      },
+      "advisories": {
+        "severity": null,
+        "active": {
+          "_rapid_links": {
+            "related": {
+              "href": "https://api.data.charitynavigator.org/v2/Organizations/010211478/Advisories?status=ACTIVE"
+            }
+          }
+        }
+      },
+      "organization": {
+        "charityName": "United Way of Eastern Maine",
+        "ein": "010211478",
+        "charityNavigatorURL": "https://www.charitynavigator.org/?bay=search.summary&orgid=12517&utm_source=DataAPI&utm_content=9af5afa3",
+        "_rapid_links": {
+          "related": {
+            "href": "https://api.data.charitynavigator.org/v2/Organizations/010211478"
+          }
+        }
+      },
+      "id": 3
+    },
+    {
+      "charityNavigatorURL": "https://www.charitynavigator.org/?bay=search.summary&orgid=3916&utm_source=DataAPI&utm_content=9af5afa3",
+      "mission": "The Jackson Laboratory, founded in 1929, is an independent, nonprofit organization focusing on mammalian genetics research to advance human health. Our mission is to discover precise genomic solutions for disease and empower the global biomedical community in the shared quest to improve human health. We have 40 principal investigators leading research groups in six major areas: cancers, computational biology bioinformatics, developmental and reproductive biology, immunology, metabolic diseases, and neurobiology. Along with our research we provide scientific resources, techniques, software and data to scientists around the world. We breed and manage colonies of mice to supply other research institutions and laboratories.",
+      "websiteURL": "http://www.jax.org",
+      "tagLine": "Leading the search for tomorrow's cures",
+      "charityName": "The Jackson Laboratory",
+      "ein": "010211513",
+      "orgID": 3916,
+      "currentRating": {
+        "score": 96.6,
+        "ratingID": 162946,
+        "publicationDate": "2021-10-01T04:00:00.000Z",
+        "ratingImage": {
+          "small": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/stars/4starsb.png",
+          "large": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/stars/4stars.png"
+        },
+        "rating": 4,
+        "_rapid_links": {
+          "related": {
+            "href": "https://api.data.charitynavigator.org/v2/Organizations/010211513/Ratings/162946"
+          }
+        },
+        "financialRating": {
+          "score": 97.35,
+          "rating": 4
+        },
+        "accountabilityRating": {
+          "score": 96,
+          "rating": 4
+        }
+      },
+      "category": {
+        "categoryName": "Health",
+        "categoryID": 5,
+        "charityNavigatorURL": "https://www.charitynavigator.org/index.cfm?bay=search.categories&categoryid=5&utm_source=DataAPI&utm_content=9af5afa3",
+        "image": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/categories/environment.png?utm_source=DataAPI&utm_content=9af5afa3"
+      },
+      "cause": {
+        "causeID": 14,
+        "causeName": "Medical Research",
+        "charityNavigatorURL": "https://www.charitynavigator.org/index.cfm?bay=search.results&cgid=5&cuid=14&utm_source=DataAPI&utm_content=9af5afa3",
+        "image": "https://d20umu42aunjpx.cloudfront.net/_gfx_/causes/small/medical_research.gif?utm_source=DataAPI&utm_content=9af5afa3"
+      },
+      "irsClassification": {
+        "deductibility": "Contributions are deductible",
+        "subsection": "501(c)(3)",
+        "assetAmount": 1211767628,
+        "nteeType": "Medical Research",
+        "incomeAmount": 631185616,
+        "nteeSuffix": "0",
+        "filingRequirement": "990 (all other) or 990EZ return",
+        "classification": "Scientific Organization",
+        "latest990": "December, 2020",
+        "rulingDate": "May, 1950",
+        "nteeCode": "H92",
+        "groupName": null,
+        "deductibilityCode": "1",
+        "affiliation": "Central - the organization is a central type organization (no group exemption) of a National, Regional or Geographic grouping of organizations.",
+        "foundationStatus": "Organization which receives a substantial part of its support from a governmental unit or the general public   170(b)(1)(A)(vi)",
+        "nteeClassification": "Biomedicine, Bioengineering Research",
+        "accountingPeriod": "December",
+        "deductibilityDetail": null,
+        "exemptOrgStatus": "Unconditional Exemption",
+        "exemptOrgStatusCode": "01",
+        "nteeLetter": "H"
+      },
+      "mailingAddress": {
+        "country": null,
+        "stateOrProvince": "ME",
+        "city": "Bar Harbor",
+        "postalCode": "04609    ",
+        "streetAddress1": "600 Main Street",
+        "streetAddress2": null
+      },
+      "donationAddress": {
+        "country": null,
+        "stateOrProvince": "ME",
+        "city": "Bar Harbor",
+        "postalCode": "04609",
+        "streetAddress1": "P.O. Box 254",
+        "streetAddress2": null
+      },
+      "advisories": {
+        "severity": null,
+        "active": {
+          "_rapid_links": {
+            "related": {
+              "href": "https://api.data.charitynavigator.org/v2/Organizations/010211513/Advisories?status=ACTIVE"
+            }
+          }
+        }
+      },
+      "organization": {
+        "charityName": "The Jackson Laboratory",
+        "ein": "010211513",
+        "charityNavigatorURL": "https://www.charitynavigator.org/?bay=search.summary&orgid=3916&utm_source=DataAPI&utm_content=9af5afa3",
+        "_rapid_links": {
+          "related": {
+            "href": "https://api.data.charitynavigator.org/v2/Organizations/010211513"
+          }
+        }
+      },
+      "id": 4
+    },
+    {
+      "charityNavigatorURL": "https://www.charitynavigator.org/?bay=search.summary&orgid=7736&utm_source=DataAPI&utm_content=9af5afa3",
+      "mission": "Pine Tree Society helps people in Maine with disabilities lead richer, more socially connected lives. Too often, people with disabilities feel left out, even isolated. With the help of Pine Tree Society, they're not alone! We share a spirit of innovation and desire to discover new ways to break down barriers that many find insurmountable. It started as a bold new idea in 1936 and that commitment continues every day. Whether it's a young girl with Cerebral Palsy discovering her first best friend at Pine Tree Camp, an adult finding his voice with customized assistive technology or an adult with a developmental disability participating in a new and exciting activities at Community Services, Pine Tree Society changes lives.",
+      "websiteURL": "http://www.pinetreesociety.org/",
+      "tagLine": "Discovering abilities together",
+      "charityName": "Pine Tree Society",
+      "ein": "010212442",
+      "orgID": 7736,
+      "currentRating": {
+        "score": 91.49,
+        "ratingID": 160759,
+        "publicationDate": "2021-06-01T04:00:00.000Z",
+        "ratingImage": {
+          "small": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/stars/4starsb.png",
+          "large": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/stars/4stars.png"
+        },
+        "rating": 4,
+        "_rapid_links": {
+          "related": {
+            "href": "https://api.data.charitynavigator.org/v2/Organizations/010212442/Ratings/160759"
+          }
+        },
+        "financialRating": {
+          "score": 87.97,
+          "rating": 3
+        },
+        "accountabilityRating": {
+          "score": 100,
+          "rating": 4
+        }
+      },
+      "category": {
+        "categoryName": "Human Services",
+        "categoryID": 6,
+        "charityNavigatorURL": "https://www.charitynavigator.org/index.cfm?bay=search.categories&categoryid=6&utm_source=DataAPI&utm_content=9af5afa3",
+        "image": "https://d20umu42aunjpx.cloudfront.net/_gfx_/icons/categories/health.png?utm_source=DataAPI&utm_content=9af5afa3"
+      },
+      "cause": {
+        "causeID": 29,
+        "causeName": "Social Services",
+        "charityNavigatorURL": "https://www.charitynavigator.org/index.cfm?bay=search.results&cgid=6&cuid=29&utm_source=DataAPI&utm_content=9af5afa3",
+        "image": "https://d20umu42aunjpx.cloudfront.net/_gfx_/causes/small/social_services.gif?utm_source=DataAPI&utm_content=9af5afa3"
+      },
+      "irsClassification": {
+        "deductibility": "Contributions are deductible",
+        "subsection": "501(c)(3)",
+        "assetAmount": 32275234,
+        "nteeType": "Educational Institutions and Related Activities",
+        "incomeAmount": 10696005,
+        "nteeSuffix": "Z",
+        "filingRequirement": "990 (all other) or 990EZ return",
+        "classification": "Charitable Organization",
+        "latest990": "December, 2020",
+        "rulingDate": "September, 1946",
+        "nteeCode": "B28",
+        "groupName": null,
+        "deductibilityCode": "1",
+        "affiliation": "Independent - the organization is an independent organization or an independent auxiliary (i.e., not affiliated with a National, Regional, or Geographic grouping of organizations).",
+        "foundationStatus": "Organization which receives a substantial part of its support from a governmental unit or the general public   170(b)(1)(A)(vi)",
+        "nteeClassification": "Specialized Education Institutions",
+        "accountingPeriod": "December",
+        "deductibilityDetail": null,
+        "exemptOrgStatus": "Unconditional Exemption",
+        "exemptOrgStatusCode": "01",
+        "nteeLetter": "B"
+      },
+      "mailingAddress": {
+        "country": null,
+        "stateOrProvince": "ME",
+        "city": "Bath",
+        "postalCode": "04530",
+        "streetAddress1": "149 Front Street",
+        "streetAddress2": null
+      },
+      "advisories": {
+        "severity": null,
+        "active": {
+          "_rapid_links": {
+            "related": {
+              "href": "https://api.data.charitynavigator.org/v2/Organizations/010212442/Advisories?status=ACTIVE"
+            }
+          }
+        }
+      },
+      "organization": {
+        "charityName": "Pine Tree Society",
+        "ein": "010212442",
+        "charityNavigatorURL": "https://www.charitynavigator.org/?bay=search.summary&orgid=7736&utm_source=DataAPI&utm_content=9af5afa3",
+        "_rapid_links": {
+          "related": {
+            "href": "https://api.data.charitynavigator.org/v2/Organizations/010212442"
+          }
+        }
+      },
+      "id": 5
     }
   ]
 }
