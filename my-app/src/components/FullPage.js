@@ -56,7 +56,7 @@ function FullPage() {
 
     return(
         <BrowserRouter>
-            <NavBar onChangePage = {setPage} />
+            <NavBar onChangePage = {setPage} className="nav" />
             <Switch>
                 <Route exact path="/">
                     <StarterList charity={inventory} onCharityClicked={onCharityClicked} />

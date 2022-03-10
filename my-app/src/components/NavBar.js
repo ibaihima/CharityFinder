@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom"
 
 function NavBar() {
     return (
-        <>
-          <NavLink exact to="/">Home</NavLink>
-          <NavLink to="/search">SearchBar</NavLink>
-          <NavLink to="/liked">LikedList</NavLink>
-        </>
+        <div className="nav">
+          <NavLink className="nav_element" exact to="/">Home</NavLink>
+          <NavLink className="nav_element" to="/search">SearchBar</NavLink>
+          <NavLink className="nav_element" to="/liked">LikedList</NavLink>
+        </div>
     );
 }
 

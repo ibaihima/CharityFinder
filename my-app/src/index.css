@@ -15,7 +15,8 @@ code {
 html, body, #root {
   background: #E3E3D8;
   font-family: sans-serif;
-  padding: 25px;
+  padding: 10px;
+  font-size: 14px
 }
  
 .row {
@@ -50,7 +51,7 @@ html, body, #root {
   background: #A6CDDE;
   color: white;
   float: right;
-  height: 200%;
+  height: 300%;
   overflow: hidden;
 }
  
@@ -76,4 +77,20 @@ align-items:center;
   display: flex;
   justify-content: center;
   align-items:center;
+  text-align: center;
+  padding: 10px;
+  background-color:#e07b4f;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav_element{
+  padding: 0 40px 0px 40px;
+}
+
+.header_img{
+  padding-left: 200px;
+}
+
+h1{
+  font-size: 30px;
 }

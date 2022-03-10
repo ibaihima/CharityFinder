@@ -22,6 +22,7 @@ Must use json-server and GET and POST to it x
     - TODO: Find categories of charities 
     - TODO: Manually chart categories 
     - TODO: Dropdown for filter list and handle filter
+    - Reference: Previous labs
 - LikedList
     - TODO: Find a way to create seperate db.json to track like listed and use POST method
 
