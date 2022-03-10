@@ -1,6 +1,6 @@
 import React from 'react';
  
-function EachCard({charity, onShowClicked}) {
+function EachCard({charity, onCharityClicked}) {
     return(
         <div className="wrapper">
             <div className="container">
@@ -11,7 +11,7 @@ function EachCard({charity, onShowClicked}) {
                             <h1>{charity.charityName}{/* charity name*/}</h1>
                             <img src={charity.currentRating.ratingImage.large} alt={charity.charityName} />
                         </div>
-                        <div className="list"  onClick={() => onShowClicked(charity)}>Add To List</div>
+                        <div className="list"  onClick={() => onCharityClicked(charity)}>Add To List</div>
  
                     </div>
                     <div className='right'>

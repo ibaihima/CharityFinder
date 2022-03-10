@@ -38,14 +38,18 @@ function FullPage() {
 
       }
          
-
+      function onCharityClicked(charity){
+          return(
+              console.log('im saved', charity)
+          )
+      }
 
     return(
         <BrowserRouter>
             <NavBar onChangePage = {setPage} />
             <Switch>
                 <Route exact path="/">
-                    <StarterList charity={inventory} />
+                    <StarterList charity={inventory} onCharityClicked={onCharityClicked} />
                 </Route>
                 <Route path="/search">
                     <Filter onFilterChange={handleSearchChange}  />
