@@ -11,7 +11,7 @@ function EachCard({charity, onCharityClicked}) {
                             <h1>{charity.charityName}{/* charity name*/}</h1>
                             <img src={charity.currentRating.ratingImage.large} alt={charity.charityName} />
                         </div>
-                        <div className="list"  onClick={() => onCharityClicked(charity)}>Add To List</div>
+                        <div className="list"  onClick={ () => onCharityClicked(charity)}>Add To List</div>
  
                     </div>
                     <div className='right'>

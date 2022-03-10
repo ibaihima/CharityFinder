@@ -36,13 +36,23 @@ function FullPage() {
     function handleSearchChange(e) {
         setFilterCategory(e.target.value)
 
-      }
-         
-      function onCharityClicked(charity){
-          return(
-              console.log('im saved', charity)
-          )
-      }
+    }
+
+    function onCharityClicked(charity){
+        fetch("http://localhost:3000/likedList", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify(charity),
+            })
+            .then(response => response.json())
+            .catch(error => console.error("Error:", error))
+            .then(response => console.log("Success:", JSON.stringify(response)));
+        return(
+            console.log("clicked")
+        )
+    }
 
     return(
         <BrowserRouter>
@@ -53,7 +63,7 @@ function FullPage() {
                 </Route>
                 <Route path="/search">
                     <Filter onFilterChange={handleSearchChange}  />
-                    <StarterList charity={savedInventory} />
+                    <StarterList charity={savedInventory} onCharityClicked={onCharityClicked} />
                 </Route>
                 <Route path="/liked">
                     <Filter />
