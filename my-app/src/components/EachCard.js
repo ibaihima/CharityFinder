@@ -15,7 +15,7 @@ function EachCard({charity, onCharityClicked, handleDelete}) {
  
                     </div>
                     <div className='right'>
-                         <h1 className ='details' onClick={ () => handleDelete(charity)}>{charity.mission}</h1>
+                         <p className ='details' onClick={ () => handleDelete(charity)}>{charity.mission}</p>
                     </div>
                 </div>
             </div>
