@@ -1,6 +1,6 @@
 import React from 'react';
  
-function EachCard({charity, onCharityClicked}) {
+function EachCard({charity, onCharityClicked, handleDelete}) {
     return(
         <div className="wrapper">
             <div className="container">
@@ -15,7 +15,7 @@ function EachCard({charity, onCharityClicked}) {
  
                     </div>
                     <div className='right'>
-                         <h1 className ='details'>{charity.mission}</h1>
+                         <h1 className ='details' onClick={ () => handleDelete(charity)}>{charity.mission}</h1>
                     </div>
                 </div>
             </div>

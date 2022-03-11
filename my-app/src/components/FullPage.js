@@ -62,19 +62,34 @@ function FullPage() {
         )
     }
 
+    function handleDelete (charity){
+        if(likedList.find(item => item.orgID === charity.orgID)) {
+            const newList = likedList.filter(item => item !== charity)
+            setLikedList(newList)
+            fetch("http://localhost:3000/likedList/"+charity.id, {
+            method: "DELETE" })
+        } else {
+            console.log("Not found")
+        }
+    }
+
+    function deleteDummy(){
+        console.log("Error!")
+    }
+
     return(
         <BrowserRouter>
             <NavBar onChangePage = {setPage} className="nav" />
             <Switch>
                 <Route exact path="/">
-                    <StarterList charity={inventory} onCharityClicked={onCharityClicked} />
+                    <StarterList charity={inventory} onCharityClicked={onCharityClicked} onDelete = {deleteDummy} />
                 </Route>
                 <Route path="/search">
                     <Filter onFilterChange={handleSearchChange}  />
-                    <StarterList charity={savedInventory} onCharityClicked={onCharityClicked} />
+                    <StarterList charity={savedInventory} onCharityClicked={onCharityClicked} onDelete = {deleteDummy} />
                 </Route>
                 <Route path="/liked">
-                    <LikedList charity = {likedList}/>
+                    <LikedList charity = {likedList} handleDelete = {handleDelete}/>
                 </Route>
                 <Route path="*">
                     <h1>404 not found</h1>

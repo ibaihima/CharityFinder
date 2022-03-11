@@ -3,12 +3,12 @@ import EachCard from "./EachCard";
 import {v4 as uuid} from 'uuid'
 
 
-function LikedList({charity}){
+function LikedList({charity, handleDelete}){
     return(
         <div> {
             charity.map((charity) => {
                 return(
-                    <EachCard key={uuid()} charity={charity}/>
+                    <EachCard key={uuid()} charity={charity} handleDelete={handleDelete}/>
                 )
             })
         }
