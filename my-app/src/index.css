@@ -99,3 +99,15 @@ align-items:center;
 h1{
   font-size: 30px;
 }
+
+.title{
+  text-align: center;
+  color: #e07b4f;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+}
+
+.subtitle{
+  font-size: 20px
+
+}
