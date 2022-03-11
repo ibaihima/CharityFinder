@@ -16,7 +16,7 @@ html, body, #root {
   background: #E3E3D8;
   font-family: sans-serif;
   padding: 10px;
-  font-size: 14px
+  font-size: 13px
 }
  
 .row {
@@ -25,11 +25,11 @@ html, body, #root {
 }
  
 .wrapper {
-  width: 600px;
-  height: 200px;
+  width: 625px;
+  height: 220px;
   background: white;
   margin: auto;
-  display:flex;
+  display: flex;
   flex-direction: row;
   overflow: hidden;
   border-radius: 10px 10px 10px 10px;
@@ -49,7 +49,7 @@ html, body, #root {
 }
 
 .right {
-  height: 600px
+  height: 600px;
 }
  
 .wrapper .container .bottom .right {
@@ -110,4 +110,8 @@ h1{
 .subtitle{
   font-size: 20px
 
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
 }
