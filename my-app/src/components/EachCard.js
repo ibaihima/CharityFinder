@@ -11,8 +11,10 @@ function EachCard({charity, onCharityClicked, handleDelete}) {
                             <h1>{charity.charityName}{/* charity name*/}</h1>
                             <img src={charity.currentRating.ratingImage.large} alt={charity.charityName} />
                         </div>
-                        <div className="list"  onClick={ () => onCharityClicked(charity)}>Add To List</div>
- 
+                        <div>
+                        <button className="list"  onClick={ () => onCharityClicked(charity)}>Add To List</button>                         
+                        </div>
+                        <a href={charity.websiteURL}>Go Support</a>
                     </div>
                     <div className='right'>
                          <p className ='details' onClick={ () => handleDelete(charity)}>{charity.mission}</p>
