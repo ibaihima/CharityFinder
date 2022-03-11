@@ -65,7 +65,10 @@ function FullPage() {
 
 
     function onCharityClicked(charity){
-        fetch("http://localhost:3000/likedList", {
+        const foundIndex = likedList.findIndex(item => charity.charityName === item.charityName);
+        if (foundIndex === -1) {
+            setLikedList([...likedList, charity]);
+            fetch("http://localhost:3000/likedList", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
@@ -74,9 +77,9 @@ function FullPage() {
             })
             .then(response => response.json())
             .catch(error => console.error("Error:", error))
-        return(
-            console.log("clicked")
-        )
+        } else {
+            console.log("Charity already on list");
+        }
     }
 
     function handleDelete (charity){

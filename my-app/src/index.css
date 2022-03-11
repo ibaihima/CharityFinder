@@ -16,7 +16,7 @@ html, body, #root {
   background: #E3E3D8;
   font-family: sans-serif;
   padding: 10px;
-  font-size: 13px
+  font-size: 16px
 }
  
 .row {
@@ -31,7 +31,7 @@ html, body, #root {
   margin: auto;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  overflow-y: auto;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0;
   transform: scale(0.95);
@@ -57,8 +57,7 @@ html, body, #root {
   background: #A6CDDE;
   color: white;
   float: right;
-  overflow: hidden;
-}
+} 
  
 .wrapper .container .bottom .right .details {
   padding: 0;
