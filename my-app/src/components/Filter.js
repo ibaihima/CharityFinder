@@ -8,12 +8,13 @@ function Filter({onSearchChange,onFilterChange}){
     
     return(
         <div className="Filter">
-            <input className="searchBar" type="text" name="search" placeholder="Search..." onChange={onSearchChange} />
+            <input className="searchBar" type="text" name="search" placeholder="Search..." onChange={(event) => onSearchChange(event.target.value)} />
             <div>
             <select name="filter" onChange={onFilterChange}>
-                <option value="All">Filter by category</option>
+                <option value="">Filter by category</option>
                 <option value="1">Animals</option>
                 <option value="2">Arts,Culture,Humanities</option>
+                <option value="3">Education</option>                
                 <option value="4">Environment</option>
                 <option value="5">Health</option>
                 <option value="6">Human Servives</option>
@@ -23,7 +24,6 @@ function Filter({onSearchChange,onFilterChange}){
                 <option value="10">Commuity Development</option>
                 <option value="11">Research and Public Policy</option>
                 <option value="16">Youth Development, Shelter, and Crisis Services</option>
-                <option value="3">Education</option>
             </select>
             </div>
       </div>

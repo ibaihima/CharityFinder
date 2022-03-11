@@ -7,7 +7,6 @@ function StarterList({charity, onCharityClicked, onDelete}) {
     <div className='row'>
         {      
             charity.slice(0,10).map((charity) => {
-                console.log('startList',charity)
                 return(
                 <EachCard key={uuid()} charity={charity} onCharityClicked={onCharityClicked} handleDelete = {onDelete}/>
                 )

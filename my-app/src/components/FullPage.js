@@ -12,24 +12,36 @@ function FullPage() {
     const [filterCategory, setFilterCategory] = useState("")
     const [savedInventory, setSavedInventory] = useState([])
     const [likedList, setLikedList] = useState([])
+    const [search, setSearch] = useState("")
 
     useEffect(() => {
         fetch('https://api.data.charitynavigator.org/v2/Organizations?app_id=46d68c21&app_key=b6a0d59f06011cc01deec1812f392ebd&rated=true')
         .then(res => res.json())
         .then(data =>{
-            setInventory(data)
+            if (data.errorMessage) {
+            setInventory([])
+            }
+            else {
+                setInventory(data)
+            }
             console.log(data)
         })
+        .catch(err => console.log('error',err))
     },[])
 
     useEffect(() => {
-        fetch(`https://api.data.charitynavigator.org/v2/Organizations?app_id=46d68c21&app_key=b6a0d59f06011cc01deec1812f392ebd&rated=true&categoryID=${filterCategory}`)
+        fetch(`https://api.data.charitynavigator.org/v2/Organizations?app_id=46d68c21&app_key=b6a0d59f06011cc01deec1812f392ebd&rated=true&categoryID=${filterCategory}&search=${search}`)
         .then(res => res.json())
         .then(data =>{
-            console.log('categoryFetch', data)
-            setSavedInventory(data)
+            if (data.errorMessage) {
+                setSavedInventory([])
+                }
+                else {
+                    setSavedInventory(data)
+                }
         })
-    },[filterCategory])
+        .catch(err => console.log('error',err))
+    },[filterCategory, search])
 
 
     useEffect(() => {
@@ -38,14 +50,19 @@ function FullPage() {
         .then(data => {
             setLikedList(data)
         })
+        .catch(err => console.log('error',err))
     },[])
 
 
 
-    function handleSearchChange(e) {
+    function handleFilterChange(e) {
         setFilterCategory(e.target.value)
 
     }
+
+
+
+
 
     function onCharityClicked(charity){
         fetch("http://localhost:3000/likedList", {
@@ -73,9 +90,17 @@ function FullPage() {
         }
     }
 
+
+
     function deleteDummy(){
         console.log("Error!")
     }
+
+    function onSearchChange(input){
+            setSearch(input)
+    }
+
+
 
     return(
         <BrowserRouter>
@@ -85,7 +110,7 @@ function FullPage() {
                     <StarterList charity={inventory} onCharityClicked={onCharityClicked} onDelete = {deleteDummy} />
                 </Route>
                 <Route path="/search">
-                    <Filter onFilterChange={handleSearchChange}  />
+                    <Filter onFilterChange={handleFilterChange} onSearchChange={onSearchChange}  />
                     <StarterList charity={savedInventory} onCharityClicked={onCharityClicked} onDelete = {deleteDummy} />
                 </Route>
                 <Route path="/liked">
